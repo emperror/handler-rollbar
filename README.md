@@ -25,6 +25,9 @@ import (
 )
 
 func main() {
+    	token := "token"
+
+	handler := rollbar.New(token, "env", "version", "host", "serverRoot")
 }
 ```
 
