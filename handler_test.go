@@ -3,7 +3,7 @@ package rollbar_test
 import (
 	"github.com/rollbar/rollbar-go"
 
-	rollbarhandler "handler.emperror.dev/rollbar"
+	rollbarhandler "emperror.dev/handler/rollbar"
 )
 
 func ExampleNew() {

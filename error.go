@@ -74,11 +74,13 @@ func shortenFilePath(s string) string {
 	if idx != -1 {
 		return s[idx+5:]
 	}
+
 	for _, pattern := range knownFilePathPatterns {
 		idx = strings.Index(s, pattern)
 		if idx != -1 {
 			return s[idx:]
 		}
 	}
+
 	return s
 }
